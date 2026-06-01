@@ -1,5 +1,3 @@
-# Tutorial folder
-
 This repository extends the official [YyzHarry/imbalanced-regression](https://github.com/YyzHarry/imbalanced-regression) codebase (ICML 2021, *Delving into Deep Imbalanced Regression*). All original benchmarks and the hands-on Colab tutorial live in that upstream project.
 
 ## What this fork adds
