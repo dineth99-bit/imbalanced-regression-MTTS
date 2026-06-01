@@ -1,15 +1,30 @@
-# Hands-on Tutorial of Deep Imbalanced Regression
+# Tutorial folder
 
-<p class="aligncenter">
-    <a href="https://colab.research.google.com/github/YyzHarry/imbalanced-regression/blob/master/tutorial/tutorial.ipynb" target="_parent">
-        <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-    </a> 
-</p>
+This repository extends the official [YyzHarry/imbalanced-regression](https://github.com/YyzHarry/imbalanced-regression) codebase (ICML 2021, *Delving into Deep Imbalanced Regression*). All original benchmarks and the hands-on Colab tutorial live in that upstream project.
 
+## What this fork adds
 
-This is a hands-on tutorial for **Delving into Deep Imbalanced Regression** [[Paper]](https://arxiv.org/abs/2102.09554).
+| Extension | Location | Description |
+|-----------|----------|-------------|
+| **SkyFinder-DIR** | [`skyfinder-dir/`](../skyfinder-dir/) | Temperature prediction from outdoor webcam images; camera-disjoint splits; LDS/FDS benchmarks |
+| **MTTS & AgeDB experiments** | [`agedb-dir/`](../agedb-dir/) | Non-stationary label smoothing (MTTS), extended baselines, and result collection on AgeDB-DIR |
 
-```bib
+Everything else (`imdb-wiki-dir/`, `nyud2-dir/`, `sts-b-dir/`, `teaser/`, etc.) follows the upstream layout unless noted in the root [README.md](../README.md).
+
+## Original hands-on tutorial
+
+The Boston Housing DIR walkthrough (`tutorial.ipynb`) and Colab badge are maintained by the authors:
+
+- Notebook: [tutorial/tutorial.ipynb](https://github.com/YyzHarry/imbalanced-regression/blob/main/tutorial/tutorial.ipynb) (upstream)
+- Open in Colab: [link](https://colab.research.google.com/github/YyzHarry/imbalanced-regression/blob/master/tutorial/tutorial.ipynb)
+
+A copy of `tutorial.ipynb` may remain in this folder for convenience; for the canonical version, use the upstream repo.
+
+## Citation
+
+Please cite Yang et al. (ICML 2021) for DIR, LDS, and FDS. If you use SkyFinder-DIR or MTTS experiments from this repository, cite the original DIR paper and acknowledge this extension.
+
+```bibtex
 @inproceedings{yang2021delving,
   title={Delving into Deep Imbalanced Regression},
   author={Yang, Yuzhe and Zha, Kaiwen and Chen, Ying-Cong and Wang, Hao and Katabi, Dina},
@@ -17,27 +32,3 @@ This is a hands-on tutorial for **Delving into Deep Imbalanced Regression** [[Pa
   year={2021}
 }
 ```
-
-In this notebook, we will provide a hands-on tutorial for DIR on a small-scale dataset, [Boston Housing dataset](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html), as a quick overview on how to perform practical (deep) imbalanced regression on custom datasets.
-
-You can directly open it via Colab: [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YyzHarry/imbalanced-regression/blob/master/tutorial/tutorial.ipynb), or using jupyter notebook with the following instructions.
-
-Required packages:
-```bash
-pip install --upgrade pip
-pip install --upgrade jupyter notebook
-```
-
-Then, please clone this repository to your computer using:
-
-```bash
-git clone https://github.com/YyzHarry/imbalanced-regression.git
-```
-
-After cloning is finished, you may go to the directory of this tutorial and run
-
-```bash
-jupyter notebook --port 8888
-```
-
-to start a jupyter notebook and access it through the browser. Finally, let's explore the notebook `tutorial.ipynb` prepared by us!
