@@ -1,0 +1,34 @@
+method,store_substr,status
+VANILLA,md_vanilla,DONE
+SMOTER,md_smoter,SKIPPED
+SMOGN,md_smogn,SKIPPED
+SMOGN+LDS,md_smogn_lds,SKIPPED
+SMOGN+FDS,md_smogn_fds,SKIPPED
+SMOGN+LDS+FDS,md_smogn_lds_fds,SKIPPED
+FOCAL-R,md_focal_r,DONE
+FOCAL-R+LDS,md_focal_r_lds,DONE
+FOCAL-R+FDS,md_focal_r_fds,DONE
+FOCAL-R+LDS+FDS,md_focal_r_lds_fds,DONE
+RRT stage-1,md_rrt_s1,DONE
+RRT,md_rrt,DONE
+RRT+LDS,md_rrt_lds,DONE
+RRT+FDS,md_rrt_fds,DONE
+RRT+LDS+FDS,md_rrt_lds_fds,DONE
+SQINV,md_sqinv,DONE
+SQINV+LDS,md_sqinv_lds,DONE
+SQINV+FDS,md_sqinv_fds,DONE
+SQINV+LDS+FDS,md_sqinv_lds_fds,DONE
+SMOTER+MTTS,md_smoter_mtts,SKIPPED
+SMOGN+MTTS,md_smogn_mtts,SKIPPED
+SMOGN+MTTS+FDS,md_smogn_mtts_fds,SKIPPED
+FOCAL-R+MTTS,md_focal_r_mtts,DONE
+FOCAL-R+MTTS+FDS,md_focal_r_mtts_fds,DONE
+RRT+MTTS,md_rrt_mtts,DONE
+RRT+MTTS+FDS,md_rrt_mtts_fds,DONE
+SQINV+MTTS,md_sqinv_mtts,DONE
+SQINV+MTTS+FDS,md_sqinv_mtts_fds,DONE
+SQINV+MTTS (no meta),md_sqinv_mtts_nomet,DONE
+SQINV+MTTS (unconstrained),md_sqinv_mtts_uncon,DONE
+RankSim+SQINV,md_ranksim_sqinv,DONE
+VIR,md_vir,DONE
+PRIME+PRW,md_prime_prw,DONE

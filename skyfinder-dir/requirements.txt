@@ -1,0 +1,9 @@
+torch>=1.6
+tensorboard_logger
+numpy
+pandas
+scipy
+tqdm
+matplotlib
+Pillow
+requests

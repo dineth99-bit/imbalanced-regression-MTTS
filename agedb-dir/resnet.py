@@ -124,7 +124,7 @@ class ResNet(nn.Module):
 
         return nn.Sequential(*layers)
 
-    def forward(self, x, targets=None, epoch=None):
+    def forward(self, x, targets=None, epoch=None, return_encoding=False):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
@@ -149,8 +149,9 @@ class ResNet(nn.Module):
 
         if self.training and self.fds:
             return x, encoding
-        else:
-            return x
+        if return_encoding:
+            return x, encoding
+        return x
 
 
 def resnet50(**kwargs):

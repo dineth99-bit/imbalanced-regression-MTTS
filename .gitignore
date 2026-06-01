@@ -1,5 +1,4 @@
 # Byte-compiled / optimized / DLL files
-.idea/*
 __pycache__/
 *.py[cod]
 *$py.class
@@ -128,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE
+.idea/
+
+# Experiment outputs (training checkpoints and logs)
+*-dir/checkpoint/
+external-baselines/**/checkpoint/
+external-baselines/**/pretrained/
+
+# AgeDB-DIR local data (keep CSV manifests and preprocessing scripts)
+agedb-dir/data/*.zip
+agedb-dir/data/AgeDB/
+agedb-dir/data/agedb_on_disk.csv
+
+# SkyFinder-DIR local data (keep skyfinder.csv and preprocessing scripts)
+skyfinder-dir/data/*.zip
+skyfinder-dir/data/images/
+skyfinder-dir/data/masks/
